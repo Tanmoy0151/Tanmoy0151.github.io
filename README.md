@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+Readme for port folio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Create a portfolio with the following components using the following attributes:
 
-## Available Scripts
+Navbar : id="nav-menu"
+Home section : id="home"
+About section : id="about" class="about section"
+Skills section : id="skills"
+Projects section : id="projects"
+Contact section : id="contact"
 
-In the project directory, you can run:
+# The elements within the navbar linked to the above 4 sections should have the following.
 
-### `npm start`
+Element linked to Home section : class="nav-link home"
+Element linked to About section : class="nav-link about"
+Element linked to Skills section : class="nav-link skills"
+Element linked to Projects section : class="nav-link projects"
+Element linked to Contact section : class="nav-link contact"
+Element linked to Resume : class="nav-link resume"
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### The following must be present within elements with the respective IDs:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Name : id="user-detail-name"
+Formal introduction : id="user-detail-intro"
+Contact elements must have the following IDs:
+GitHub profile link : id="contact-github"
+LinkedIn profile link : id="contact-linkedin"
+Phone number : id="contact-phone"
+Email address : id="contact-email"
+The image linking your professional photo must have class="home-img"
 
-### `npm test`
+## Each project card in the Projects section should have class="project-card" and the following:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Image of the project
+Title : class="project-title"
+Description : class="project-description"
+Tech stack used : class="project-tech-stack"
+Link to GitHub repository : class="project-github-link"
+Deployed link or video link : class="project-deployed-link"
+Each skills card in the Skills section should have class="skills-card" and the following:
+Image : class="skills-card-img"
+Name : class="skills-card-name"
 
-### `npm run build`
+# There must be two buttons for resume. Clicking on them should open the resume in a new tab and download it as a PDF. They must have the following IDs:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+For the button in the Resume section : id="resume-button-1"
+For the button in the Home/About section : id="resume-button-2"
+If you're using anchor elements for the resume buttons, they must have the following IDs:
+For the button in the Resume section : id="resume-link-1"
+For the button in the Home/About section : id="resume-link-2"
+For the GitHub calendar: class="react-activity-calendar" (the class is automatically included if you're using the react-github-calendar npm package)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### The GitHub statistics images must have the following IDs:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+GitHub streak stats : id="github-streak-stats" [Link to refer : https://github-readme-streak-stats.herokuapp.com/demo/]
+GitHub top languages : id="github-top-langs" [Link to refer : https://github.com/anuraghazra/github-readme-stats]
+GitHub stats card : id="github-stats-card" [Link to refer : https://github.com/anuraghazra/github-readme-stats]
 
-### `npm run eject`
+## Do not repeat any of the above class names and ID names for any other element.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+General guidelines
+The system on cp.masaischool.com may take between 1-20 minutes for responding,
+so we request you to read the problem carefully and debug it before itself
+we also request you not just submit it last minute
+try to keep one submission at a time
