@@ -1,0 +1,160 @@
+.home-container {
+  row-gap: 7rem;
+}
+.home-content {
+  grid-template-columns: 116px repeat(2, 1fr);
+  padding-top: 5.5rem; /* I need here some chenge */
+  column-gap: 2rem;
+  align-items: center;
+}
+
+.home-social {
+  display: grid;
+  grid-template-columns: max-content;
+  row-gap: 1rem;
+}
+
+.home-social-icon {
+  font-size: 1.25rem;
+  color: var(--title-color);
+}
+.home-social-icon:hover {
+  color: var(--title-color-dark);
+}
+
+.home-title {
+  /* font-size:  2.75rem; */
+  font-size: var(--big-font-size);
+  margin-bottom: var(--mb-0-25);
+}
+/* .home-hand {
+  width: 38px;
+  height: 38px;
+  margin-left: 0.4rem;
+} */
+
+.home-subtitle {
+  position: relative;
+  font-size: var(--h2-font-size);
+  padding-left: 3rem;
+
+  font-weight: var(--font-normal);
+  margin-bottom: var(--mb-1);
+}
+/* .home-subtitle::before {
+  content: '';
+  position: absolute;
+
+  width: 70px;
+  height: 2px;
+  background-color: var(--text-color);
+  left: 0;
+  top: 1rem;
+} */
+
+.home-description {
+  max-width: 400px;
+  margin-bottom: var(--mb-3);
+}
+
+.home-image {
+  background: url(../../Assets/profile.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  order: 1;
+  justify-self: center;
+  box-shadow: inset 0 0 0 9px rgb(255 255 255/30%);
+  animation: profile_animate 8s ease-in-out infinite 1s;
+}
+
+@keyframes profile_animate {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 20% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+  .home-content {
+    grid-template-columns: 100px repeat(2, 1fr);
+    column-gap: 1.25rem;
+  }
+  .home-subtitle {
+    padding-left: 3.75rem;
+    margin-bottom: var(--mb-1);
+  }
+  .home-subtitle::before {
+    width: 42px;
+    top: 0.8rem;
+  }
+  .home-description {
+    max-width: initial;
+    margin-bottom: var(--mb-0-25);
+  }
+  .home-image {
+    width: 250px;
+    height: 250px;
+    box-shadow: inset 0 0 0 8px rgb(255 255 255/30%);
+  }
+  .button {
+    padding: 1rem 1.75rem;
+  }
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+  .home-content {
+    grid-template-columns: 0.5fr 3fr;
+    padding-top: 3.5rem;
+  }
+  .home-subtitle {
+  }
+  .home-subtitle::before {
+  }
+  .home-description {
+  }
+  .home-image {
+    order: initial;
+    justify-self: initial;
+    width: 200px;
+    height: 200px;
+    box-shadow: inset 0 0 0 6px rgb(255 255 255/30%);
+  }
+  .home-data {
+    /* this class is in Data.jsx */
+    grid-column: 1/3; /* Span from the first to the third column */
+  }
+}
+
+@media screen and (max-width: 576px) {
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+  .home-content {
+  }
+  .home-subtitle {
+  }
+  .home-subtitle::before {
+  }
+  .home-description {
+  }
+  .home-image {
+    width: 180px;
+    height: 180px;
+  }
+  .home-data {
+  }
+}
+
+/* experiment */
