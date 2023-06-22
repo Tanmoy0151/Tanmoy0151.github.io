@@ -1,4 +1,4 @@
-Readme for port folio
+# Readme for portfolio
 
 # Create a portfolio with the following components using the following attributes:
 
