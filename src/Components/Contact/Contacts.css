@@ -1,4 +1,4 @@
-.contact-container{
+.contact-container {
   grid-template-columns: repeat(2, max-content);
   justify-content: center;
   column-gap: 6rem;
@@ -102,11 +102,25 @@
 /* Large Screen Size */
 
 @media screen and (max-width: 992px) {
+  .contac t-container {
+    column-gap: 3rem;
+  }
 }
 
 /* Medium Screen Size */
 
 @media screen and (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+  }
+  .contact-info {
+    justify-content: center;
+  }
+  .contact-from{
+    margin: 0 auto;
+    
+  }
 }
 
 /* Medium Screen Size */
