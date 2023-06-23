@@ -1,4 +1,4 @@
-.contact-container {
+.contact-container{
   grid-template-columns: repeat(2, max-content);
   justify-content: center;
   column-gap: 6rem;
@@ -92,4 +92,29 @@
 }
 .contact-from-area {
   height: 11rem;
+}
+.contact-from-area textarea {
+  resize: none;
+}
+
+/* ========== BREAK POINT ============ */
+
+/* Large Screen Size */
+
+@media screen and (max-width: 992px) {
+}
+
+/* Medium Screen Size */
+
+@media screen and (max-width: 768px) {
+}
+
+/* Medium Screen Size */
+
+@media screen and (max-width: 576px) {
+}
+
+/* Small Screen Size */
+
+@media screen and (max-width: 365px) {
 }

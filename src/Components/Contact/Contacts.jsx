@@ -33,32 +33,34 @@ const Contacts = () => {
 
                         </div>
 
-                        <div className="contact-content">
-                            <h3 className="contact-title">Write me on Your Project</h3>
-                            <form action="" className="contact-form">
-                                <div className="contact-from-div">
-                                    <label htmlFor="" className="contact-from-tag">Name</label>
-                                    <input type="text" name="name" className="contact-from-input" placeholder='Insert Your Name' />
 
-                                </div>
-                                <div className="contact-from-div">
-                                    <label htmlFor="" className="contact-from-tag">Email</label>
-                                    <input type="email" name="email" className="contact-from-input" placeholder='Insert Your Email' />
-
-                                </div>
-                                <div className="contact-from-div contact-from-area">
-                                    <label htmlFor="" className="contact-from-tag">Project</label>
-                                    <textarea type="text" name="project" cols='30' rows='10' className="contact-from-input" placeholder='Write your Projects' />
-
-                                </div>
-                                <button className="button button--flex">
-                                    Send Message
-                                </button>
-                            </form>
-                        </div>
 
 
                     </div>
+
+                </div>
+                <div className="contact-content">
+                    <h3 className="contact-title">Write me on Your Project</h3>
+                    <form action="" className="contact-form">
+                        <div className="contact-from-div">
+                            <label htmlFor="" className="contact-from-tag">Name</label>
+                            <input type="text" name="name" className="contact-from-input" placeholder='Insert Your Name' />
+
+                        </div>
+                        <div className="contact-from-div">
+                            <label htmlFor="" className="contact-from-tag">Email</label>
+                            <input type="email" name="email" className="contact-from-input" placeholder='Insert Your Email' />
+
+                        </div>
+                        <div className="contact-from-div contact-from-area">
+                            <label htmlFor="" className="contact-from-tag">Project</label>
+                            <textarea type="text" name="project" cols='30' rows='10' className="contact-from-input" placeholder='Write your Projects' />
+
+                        </div>
+                        <button className="button button--flex">
+                            Send Message
+                        </button>
+                    </form>
                 </div>
 
             </div>
