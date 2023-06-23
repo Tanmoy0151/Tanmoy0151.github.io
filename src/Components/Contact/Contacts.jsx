@@ -1,25 +1,32 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import './Contacts.css'
 import { UilArrowRight, UilEnvelope, UilPhoneAlt, UilLinkedinAlt } from '@iconscout/react-unicons'
+
 const Contacts = () => {
+
     const form = useRef();
-    const SERVICE_ID = process.env.SERVICE_ID;
-    const TEMPLATE_ID = process.env.TEMPLATE_ID;
-    const PUBLIC_KEY = process.env.PUBLIC_KEY;
-console.log(SERVICE_ID,TEMPLATE_ID,PUBLIC_KEY);
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-  
 
-    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
-  };
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+        const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
+        const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
+        const PUBLIC_KEY = process.env.REACT_APP_PUBLIC_KEY;
+        // console.log(SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY);
+
+        emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
+            .then((result) => {
+                console.log(result.text, "this message sent successfully");
+                alert("Message sent successfully")
+
+            }, (error) => {
+                console.log(error.text);
+                alert("Message Sent Failed")
+            });
+        e.target.reset();
+    };
     return (
         <section className="contact section" id="contact">
             <h2 className="section-title">
@@ -48,6 +55,7 @@ console.log(SERVICE_ID,TEMPLATE_ID,PUBLIC_KEY);
                             <h3 className="contact-card-title">Linkedin</h3>
                             <span className="contact-card-data">tanmoy-roy-28b081253</span>
                             <a href="https://www.linkedin.com/in/tanmoy-roy-28b081253/" className="contact-button">See me {" "}<UilArrowRight className='contact-button-icon' /></a>
+                            
 
                         </div>
 

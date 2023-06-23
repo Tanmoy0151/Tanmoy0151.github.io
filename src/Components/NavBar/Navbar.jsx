@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import { Link, animateScroll as scroll } from "react-scroll";
+import CV from '../../Assets/Tanmoy_Roy_Resume.pdf'
 import './Navbar.css'
 
 import {
     UilEstate, UilUser, UilTimes, UilApps,
-    UilFileAlt, UilBriefcaseAlt, UilMessage, UilCog
+    UilFileDownload, UilBriefcaseAlt, UilMessage, UilCog
 } from '@iconscout/react-unicons'
 
 
@@ -77,7 +78,7 @@ const Navbar = () => {
                             offset={-70}
                             duration={500}
                         ><UilMessage className='nav-icon' />Contact</Link></li>
-                        <li className='nav-link resume'><UilFileAlt className='nav-icon' />Resume</li>
+                        <li className='nav-link resume'><a download={"Tanmoy-Roy-Resume"} href={CV} id="resume-link-1"></a><UilFileDownload className='nav-icon' />Resume</li>
                     </ul>
                     <UilTimes className='nav-close' onClick={() => setToggle(!toggle)} />
                 </div>
