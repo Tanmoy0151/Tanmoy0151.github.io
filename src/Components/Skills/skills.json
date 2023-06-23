@@ -3,13 +3,13 @@
     {
       "id": 1,
       "skillType": "Basic Skills",
-      "skill_name": "HTML/CSS/JavaScript"
+      "skill_name": "HTML CSS JavaScript"
     },
-    { "id": 2, "skillType": "Library/Framework", "skill_name": "React.js" },
+    { "id": 2, "skillType": "Library Framework", "skill_name": "React.js" },
     {
       "id": 3,
       "skillType": "UI/UX Frameworks",
-      "skill_name": "ChakraUi/Tailwind CSS"
+      "skill_name": "ChakraUI Tailwind"
     }
   ],
   "back_end": [

@@ -119,13 +119,19 @@
   }
   .contact-from{
     margin: 0 auto;
-    
+
   }
 }
 
 /* Medium Screen Size */
 
 @media screen and (max-width: 576px) {
+  .contact-info{
+    grid-template-columns: 1fr;
+  }
+  .contact-form{
+    width: 100%;
+  }
 }
 
 /* Small Screen Size */

@@ -8,10 +8,10 @@ const FrontEnd = () => {
                 <div className="skills-group">
                     {skillsData.front_end.map(skill => <div className="skills-data" key={skill.id}>
                         <>ic</>
-                        <>
-                            <h3 className="skills-name">{skill.skillType}</h3>
-                            <span className="skills-level">{skill.skill_name}</span>
-                        </>
+                        <div>
+                            <h3 className="skills-name">{skill.skill_name}</h3>
+                            <span className="skills-level">{skill.skillType}</span>
+                        </div>
                     </div>)}
 
 

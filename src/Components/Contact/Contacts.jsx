@@ -1,7 +1,25 @@
-import React from 'react'
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import './Contacts.css'
 import { UilArrowRight, UilEnvelope, UilPhoneAlt, UilLinkedinAlt } from '@iconscout/react-unicons'
 const Contacts = () => {
+    const form = useRef();
+    const SERVICE_ID = process.env.SERVICE_ID;
+    const TEMPLATE_ID = process.env.TEMPLATE_ID;
+    const PUBLIC_KEY = process.env.PUBLIC_KEY;
+console.log(SERVICE_ID,TEMPLATE_ID,PUBLIC_KEY);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+  
+
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
     return (
         <section className="contact section" id="contact">
             <h2 className="section-title">
@@ -41,7 +59,7 @@ const Contacts = () => {
                 </div>
                 <div className="contact-content">
                     <h3 className="contact-title">Write me on Your Project</h3>
-                    <form action="" className="contact-form">
+                    <form ref={form} onSubmit={sendEmail} className="contact-form">
                         <div className="contact-from-div">
                             <label htmlFor="" className="contact-from-tag">Name</label>
                             <input type="text" name="name" className="contact-from-input" placeholder='Insert Your Name' />

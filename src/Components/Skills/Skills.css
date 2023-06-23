@@ -22,8 +22,10 @@
 }
 .skills-group {
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
   align-items: flex-start;
   row-gap: 1rem;
+  column-gap: 1rem;
 }
 .skills-data {
   display: flex;
