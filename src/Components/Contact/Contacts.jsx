@@ -1,5 +1,6 @@
 import React from 'react'
 import './Contacts.css'
+import { UilArrowRight, UilEnvelope, UilPhoneAlt, UilLinkedinAlt } from '@iconscout/react-unicons'
 const Contacts = () => {
     return (
         <section className="contact section" id="contact">
@@ -12,11 +13,54 @@ const Contacts = () => {
                 <div className="contact-content">
                     <h3 className="contact-title">Talk to Me</h3>
                     <div className="contact-info">
-                        <div className="contact-card"><>icon</>
-                            <h3 className="contact-card-title"></h3></div>
-                        <span className="contact-card-data"></span>
-                        <a href="" className="contact-button"></a>            </div>
+                        {/* mail */}
+                        <div className="contact-card"><UilEnvelope className='contact-card-icon' />
+                            <h3 className="contact-card-title">Mail</h3>
+                            <span className="contact-card-data">roytanmoy662@gmail.com</span>
+                            <a href="mailto:roytanmoy662@gmail.com" className="contact-button">Write me {" "}<UilArrowRight className='contact-button-icon' /></a>
+                        </div>
+                        {/* phone */}
+                        <div className="contact-card"><UilPhoneAlt className='contact-card-icon' />
+                            <h3 className="contact-card-title">Mobile</h3>
+                            <span className="contact-card-data">+91 9093141114</span>
+                            <a href="tel:+91 9093141114" className="contact-button">Call me {" "}<UilArrowRight className='contact-button-icon' /></a>
+                        </div>
+                        {/* Linkedin */}
+                        <div className="contact-card"><UilLinkedinAlt className='contact-card-icon' />
+                            <h3 className="contact-card-title">Linkedin</h3>
+                            <span className="contact-card-data">tanmoy-roy-28b081253</span>
+                            <a href="https://www.linkedin.com/in/tanmoy-roy-28b081253/" className="contact-button">See me {" "}<UilArrowRight className='contact-button-icon' /></a>
+
+                        </div>
+
+                        <div className="contact-content">
+                            <h3 className="contact-title">Write me on Your Project</h3>
+                            <form action="" className="contact-form">
+                                <div className="contact-from-div">
+                                    <label htmlFor="" className="contact-from-tag">Name</label>
+                                    <input type="text" name="name" className="contact-from-input" placeholder='Insert Your Name' />
+
+                                </div>
+                                <div className="contact-from-div">
+                                    <label htmlFor="" className="contact-from-tag">Email</label>
+                                    <input type="email" name="email" className="contact-from-input" placeholder='Insert Your Email' />
+
+                                </div>
+                                <div className="contact-from-div contact-from-area">
+                                    <label htmlFor="" className="contact-from-tag">Project</label>
+                                    <textarea type="text" name="project" cols='30' rows='10' className="contact-from-input" placeholder='Write your Projects' />
+
+                                </div>
+                                <button className="button button--flex">
+                                    Send Message
+                                </button>
+                            </form>
+                        </div>
+
+
+                    </div>
                 </div>
+
             </div>
         </section>
     )
