@@ -41,16 +41,16 @@
   font-weight: var(--font-normal);
   margin-bottom: var(--mb-1);
 }
-/* .home-subtitle::before {
+.home-subtitle::before {
   content: '';
   position: absolute;
 
-  width: 70px;
+  width: 42px;
   height: 2px;
   background-color: var(--text-color);
   left: 0;
   top: 1rem;
-} */
+}
 
 .home-description {
   max-width: 400px;

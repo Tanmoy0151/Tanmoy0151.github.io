@@ -102,7 +102,7 @@
 /* Large Screen Size */
 
 @media screen and (max-width: 992px) {
-  .contac t-container {
+  .contact-container {
     column-gap: 3rem;
   }
 }
@@ -114,22 +114,24 @@
     grid-template-columns: 1fr;
     row-gap: 3rem;
   }
+  .contact-content {
+    margin: auto;
+  }
   .contact-info {
     justify-content: center;
   }
-  .contact-from{
+  .contact-from {
     margin: 0 auto;
-
   }
 }
 
 /* Medium Screen Size */
 
 @media screen and (max-width: 576px) {
-  .contact-info{
+  .contact-info {
     grid-template-columns: 1fr;
   }
-  .contact-form{
+  .contact-from {
     width: 100%;
   }
 }
@@ -137,4 +139,11 @@
 /* Small Screen Size */
 
 @media screen and (max-width: 365px) {
+  .contact-from {
+    padding: 0 10px;
+  }
+  .contact-from-input {
+    width: 95%;
+    margin: auto;
+  }
 }
