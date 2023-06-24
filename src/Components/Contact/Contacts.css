@@ -56,12 +56,12 @@
   transition: 0.3s;
 }
 .contact-button:hover {
-  color:var(--title-color-dark);
+  color: var(--title-color-dark);
   font-weight: var(--font-medium);
 }
 .contact-button:hover .contact-button-icon {
   transform: translate(0.27rem);
-  color:var(--title-color-dark);
+  color: var(--title-color-dark);
 }
 
 .contact-form {
@@ -69,6 +69,8 @@
 }
 
 .contact-from-div {
+  display: grid;
+  grid-template-columns: 1fr;
   position: relative;
   margin-bottom: var(--mb-2);
   height: 4rem;
@@ -151,5 +153,13 @@
   .contact-from-input {
     width: 95%;
     margin: auto;
+  }
+}
+/* ===== Experimental ===== */
+@media screen and (max-width: 345px) {
+  .contact-from-div {
+    width: 100%;
+    justify-self: center;
+    padding: 4px;
   }
 }
