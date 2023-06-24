@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef} from 'react';
 import emailjs from '@emailjs/browser';
 import './Contacts.css'
 import { UilArrowRight, UilEnvelope, UilPhoneAlt, UilLinkedinAlt } from '@iconscout/react-unicons'
@@ -55,7 +55,7 @@ const Contacts = () => {
                             <h3 className="contact-card-title">Linkedin</h3>
                             <span className="contact-card-data">tanmoy-roy-28b081253</span>
                             <a href="https://www.linkedin.com/in/tanmoy-roy-28b081253/" className="contact-button">See me {" "}<UilArrowRight className='contact-button-icon' /></a>
-                            
+
 
                         </div>
 
@@ -70,17 +70,17 @@ const Contacts = () => {
                     <form ref={form} onSubmit={sendEmail} className="contact-form">
                         <div className="contact-from-div">
                             <label htmlFor="" className="contact-from-tag">Name</label>
-                            <input type="text" name="name" className="contact-from-input" placeholder='Insert Your Name' />
+                            <input type="text" name="name" className="contact-from-input" placeholder='Insert Your Name' required />
 
                         </div>
                         <div className="contact-from-div">
                             <label htmlFor="" className="contact-from-tag">Email</label>
-                            <input type="email" name="email" className="contact-from-input" placeholder='Insert Your Email' />
+                            <input type="email" name="email" className="contact-from-input" placeholder='Insert Your Email' required />
 
                         </div>
                         <div className="contact-from-div contact-from-area">
                             <label htmlFor="" className="contact-from-tag">Project</label>
-                            <textarea type="text" name="project" cols='30' rows='10' className="contact-from-input" placeholder='Write your Projects' />
+                            <textarea type="text" name="project" cols='30' rows='10' className="contact-from-input" placeholder='Write your Projects' required />
 
                         </div>
                         <button className="button button--flex">

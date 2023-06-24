@@ -1,3 +1,12 @@
+.theme-btn{
+  border-radius: 40%;
+  height: 25px;
+  width: 25px;
+  color: var(--title-color);
+  background-color: var(--body-color);
+  font-weight: var(--font-bold);
+  /* transition: .7s ease-in-out; */
+}
 .header {
   width: 100%;
   position: fixed;
@@ -16,22 +25,30 @@
 
 .nav-logo,
 .nav-toggle {
-  color: var(--title-color);
+  font-size: var(--h2-font-size);
+
+  color: var(--title-color-dark);
   font-weight: var(--font-bold);
 }
-
+.nav-logo span {
+  color: var(--title-color);
+}
 .menu-items {
   display: flex;
   column-gap: 2rem;
 }
 .nav-link {
   display: flex;
+  cursor: pointer;
   /* flex-direction: column; */
   align-items: center;
   font-size: var(--small-font-size);
   color: var(--title-color);
   font-weight: var(--font-medium);
   transition: 0.3s;
+}
+.nav-link > a {
+  text-decoration: none;
 }
 
 .nav-icon,
@@ -64,7 +81,7 @@
     padding: 2rem 1.5rem 4rem;
     box-shadow: 0 -1px 4px rgba(0, 0, 0.15);
     border-radius: 1.5rem 1.5rem 0 0;
-    transition: 0.5s ease-in;
+    transition: 0.6s;
   }
   /* ===== Show Menu ===== */
   .show-menu {
@@ -103,6 +120,13 @@
     color: var(--title-color);
     transition: 0.5s;
   }
+  .theme-btn{
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    
+  }
+
   .nav-close:hover {
     color: var(--title-color-dark);
     transform: rotate(90deg);

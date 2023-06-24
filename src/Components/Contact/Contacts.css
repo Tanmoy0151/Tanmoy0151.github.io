@@ -49,13 +49,19 @@
   align-items: center;
   justify-content: center;
   column-gap: 0.25rem;
+  transition: 0.5s;
 }
 .contact-button-icon {
   font-size: 1rem;
   transition: 0.3s;
 }
+.contact-button:hover {
+  color:var(--title-color-dark);
+  font-weight: var(--font-medium);
+}
 .contact-button:hover .contact-button-icon {
-  transform: translate(0.25rem);
+  transform: translate(0.27rem);
+  color:var(--title-color-dark);
 }
 
 .contact-form {

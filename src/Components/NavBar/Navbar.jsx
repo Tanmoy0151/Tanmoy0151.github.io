@@ -1,20 +1,35 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { Link, animateScroll as scroll } from "react-scroll";
 import CV from '../../Assets/Tanmoy_Roy_Resume.pdf'
 import './Navbar.css'
 
 import {
-    UilEstate, UilUser, UilTimes, UilApps,
+    UilEstate, UilUser, UilTimes, UilApps, UilMoon, UilSun,
     UilFileDownload, UilBriefcaseAlt, UilMessage, UilCog
 } from '@iconscout/react-unicons'
+import { ThemeContext } from '../../Contexts/ThemeContext';
+
 
 
 
 const Navbar = () => {
+    const [theme, setTheme] = useContext(ThemeContext);
 
-    /* ==== this is for toggle buttons ==== */
-    const [toggle, setToggle] = useState(false);
+   
 
+    /* ==== this is for toggle menu buttons ==== */
+    const [toggleMenu, setToggleMenu] = useState(false);
+   
+    const themeToggle = () => {
+        if (theme === 'light') {
+            setTheme('dark');
+           
+        }
+        else if (theme === 'dark') {
+            setTheme('light');
+            
+        }
+    }
 
     return (
         <header className='header'>
@@ -26,10 +41,10 @@ const Navbar = () => {
                     spy={true}
                     smooth={true}
                     offset={-70}
-                    duration={500}
-                >Tanmoy</Link>
+                    duration={100}
+                >Tanmoy<span>.me</span></Link>
 
-                <div className={toggle ? "nav-menu show-menu" : "nav-menu"}>
+                <div className={toggleMenu ? "nav-menu show-menu" : "nav-menu"}>
                     <ul className="menu-items grid">
                         <li ><Link
                             className='nav-link home'
@@ -38,7 +53,7 @@ const Navbar = () => {
                             spy={true}
                             smooth={true}
                             offset={-70}
-                            duration={500}
+                            duration={100}
                         >
                             <UilEstate className='nav-icon' />
                             Home</Link></li>
@@ -49,7 +64,7 @@ const Navbar = () => {
                             spy={true}
                             smooth={true}
                             offset={-70}
-                            duration={500}
+                            duration={100}
                         ><UilUser className='nav-icon' />About</Link></li>
                         <li ><Link
                             className='nav-link skills'
@@ -58,7 +73,7 @@ const Navbar = () => {
                             spy={true}
                             smooth={true}
                             offset={-70}
-                            duration={500}
+                            duration={100}
                         ><UilCog className='nav-icon' />Skills</Link></li>
                         <li ><Link
                             className='nav-link projects'
@@ -67,22 +82,24 @@ const Navbar = () => {
                             spy={true}
                             smooth={true}
                             offset={-70}
-                            duration={500}
+                            duration={100}
                         ><UilBriefcaseAlt className='nav-icon' />Projects</Link></li>
                         <li ><Link
                             className='nav-link contact'
                             activeClass="active"
                             to="contact"
-                            spy={true}
+                            spy={true} useCSSVariables
                             smooth={true}
                             offset={-70}
-                            duration={500}
+                            duration={100}
                         ><UilMessage className='nav-icon' />Contact</Link></li>
-                        <li className='nav-link resume'><a download={"Tanmoy-Roy-Resume"} href={CV} id="resume-link-1"></a><UilFileDownload className='nav-icon' />Resume</li>
+                        <li><a className='resume-link-1 nav-link resume' download={"Tanmoy-Roy-Resume"} href={CV} id="resume-link-1"><UilFileDownload className='nav-icon' />Resume</a></li>
+                        <li><button className='theme-btn' onClick={() => themeToggle()}>{theme === 'light' ? <UilSun className='themeIcon' /> : <UilMoon className='themeIcon' />}</button></li>
+
                     </ul>
-                    <UilTimes className='nav-close' onClick={() => setToggle(!toggle)} />
+                    <UilTimes className='nav-close' onClick={() => setToggleMenu(!toggleMenu)} />
                 </div>
-                <div className="nav-toggle" onClick={() => setToggle(!toggle)}>
+                <div className="nav-toggle" onClick={() => setToggleMenu(!toggleMenu)}>
                     <UilApps />
                 </div>
 

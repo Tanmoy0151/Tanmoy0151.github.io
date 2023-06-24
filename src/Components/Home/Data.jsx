@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-scroll'
 
 const Data = () => {
     return (
@@ -8,9 +9,10 @@ const Data = () => {
             <p className="home-description">
                 I am a full-stack developer with experience in developing applications and developing applications with React components and components that integrate with React components.
             </p>
-            <a href="#contact" className="button button--flex">
+
+            <Link to="contact" className="button button--flex">
                 Say hello to me
-            </a>
+            </Link>
         </div>
     )
 }
