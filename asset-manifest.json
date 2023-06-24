@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.f72af1b8.css",
-    "main.js": "/static/js/main.55174e91.js",
+    "main.css": "/static/css/main.f68e830f.css",
+    "main.js": "/static/js/main.ed01027c.js",
     "static/media/Tanmoy_Roy_Resume.pdf": "/static/media/Tanmoy_Roy_Resume.72d22a1d1c88a9580709.pdf",
     "static/media/about.jpg": "/static/media/about.c388bf26281b461bcfdf.jpg",
     "static/media/profile.jpg": "/static/media/profile.34ed65aaa909aa7d8662.jpg",
     "index.html": "/index.html",
-    "main.f72af1b8.css.map": "/static/css/main.f72af1b8.css.map",
-    "main.55174e91.js.map": "/static/js/main.55174e91.js.map"
+    "main.f68e830f.css.map": "/static/css/main.f68e830f.css.map",
+    "main.ed01027c.js.map": "/static/js/main.ed01027c.js.map"
   },
   "entrypoints": [
-    "static/css/main.f72af1b8.css",
-    "static/js/main.55174e91.js"
+    "static/css/main.f68e830f.css",
+    "static/js/main.ed01027c.js"
   ]
 }
