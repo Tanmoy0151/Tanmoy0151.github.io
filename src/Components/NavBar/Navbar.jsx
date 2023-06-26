@@ -15,19 +15,19 @@ import { ThemeContext } from '../../Contexts/ThemeContext';
 const Navbar = () => {
     const [theme, setTheme] = useContext(ThemeContext);
 
-   
+
 
     /* ==== this is for toggle menu buttons ==== */
     const [toggleMenu, setToggleMenu] = useState(false);
-   
+
     const themeToggle = () => {
         if (theme === 'light') {
             setTheme('dark');
-           
+
         }
         else if (theme === 'dark') {
             setTheme('light');
-            
+
         }
     }
 
@@ -94,7 +94,7 @@ const Navbar = () => {
                             duration={100}
                         ><UilMessage className='nav-icon' />Contact</Link></li>
                         <li><a className='resume-link-1 nav-link resume' download={"Tanmoy-Roy-Resume"} href={CV} id="resume-link-1"><UilFileDownload className='nav-icon' />Resume</a></li>
-                        <li><button className='theme-btn' onClick={() => themeToggle()}>{theme === 'light' ? <UilSun className='themeIcon' /> : <UilMoon className='themeIcon' />}</button></li>
+                        <li><button className='theme-btn' onClick={() => themeToggle()}>{theme === 'light' ? <UilMoon className='themeIcon' /> : <UilSun className='themeIcon' />}</button></li>
 
                     </ul>
                     <UilTimes className='nav-close' onClick={() => setToggleMenu(!toggleMenu)} />
