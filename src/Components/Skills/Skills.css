@@ -14,7 +14,7 @@
   font-weight: var(--font-medium);
   text-align: center;
   margin-bottom: var(--mb-1-5);
-}
+} 
 .skills-box {
   display: flex;
   justify-content: center;
