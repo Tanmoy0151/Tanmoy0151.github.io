@@ -16,6 +16,7 @@ const Toast = ({ message, duration, onClose }) => {
     return (
         <div className={`toast ${isVisible ? 'visible' : ''}`}>
             <div className="message">{message}</div>
+            
         </div>
     );
 };

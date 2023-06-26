@@ -147,19 +147,8 @@
 /* Small Screen Size */
 
 @media screen and (max-width: 365px) {
-  .contact-from {
-    padding: 0 10px;
-  }
   .contact-from-input {
     width: 95%;
     margin: auto;
-  }
-}
-/* ===== Experimental ===== */
-@media screen and (max-width: 345px) {
-  .contact-from-div {
-    width: 100%;
-    justify-self: center;
-    padding: 4px;
   }
 }
